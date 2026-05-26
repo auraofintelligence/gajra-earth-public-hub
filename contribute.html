@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en-AU">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Create a GAJRA Earth contribution card and export it as Markdown.">
+    <title>Contribute | GAJRA Earth</title>
+    <link rel="stylesheet" href="assets/styles.css">
+    <script defer src="assets/app.js"></script>
+  </head>
+  <body data-page="contribute">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header"><div class="nav-shell"><a class="brand" href="index.html"><span class="brand-mark">G</span><span class="brand-text"><strong>GAJRA Earth</strong><span>Joyful Responsible Abundance</span></span></a><button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="site-nav" aria-label="Open menu"><span></span><span></span><span></span></button><nav class="site-nav" id="site-nav" data-nav aria-label="Main navigation"><a href="index.html">Home</a><a href="actions.html">Actions</a><a href="events.html">Events</a><a href="ledger.html">Ledger</a><a href="travel.html">Travel</a><a href="research.html">Research</a><a href="ecosystem.html">Ecosystem</a><a href="boundaries.html">Boundaries</a><a href="contribute.html">Contribute</a></nav></div></header>
+    <main id="main">
+      <section class="page-hero"><div class="page-title"><div><p class="label">Contribute</p><h1>Build a Markdown contribution card.</h1></div><p>This form creates a simple agent-readable note. It is for public action memory, not financial claims, official membership or token allocation.</p></div></section>
+      <section class="section">
+        <div class="shell">
+          <div class="form-grid">
+            <form class="card field-grid" data-contribution-form>
+              <div class="field"><label for="title">Contribution title</label><input id="title" name="title" placeholder="Example: Amity values table first draft"></div>
+              <div class="field"><label for="role">Role</label><select id="role" name="role"><option>Contributor</option><option>Host</option><option>Steward</option><option>Researcher</option><option>Builder</option><option>Sponsor</option></select></div>
+              <div class="field"><label for="place">Place or network</label><input id="place" name="place" placeholder="Example: Amity, Minjerribah, online, school, club"></div>
+              <div class="field"><label for="time">Estimated C-Hours</label><input id="time" name="time" placeholder="Example: 1.5"></div>
+              <div class="field"><label for="wallet">Public handle or wallet, optional</label><input id="wallet" name="wallet" placeholder="Optional public handle, wallet or contact path"></div>
+              <div class="field"><label for="action">Proposed action</label><textarea id="action" name="action" placeholder="What are you offering, hosting, researching, building or recording?"></textarea></div>
+              <div class="field"><label for="abundance">Definition of joyful responsible abundance</label><textarea id="abundance" name="abundance" placeholder="What does abundance look like when it is joyful and responsible in this context?"></textarea></div>
+              <div class="field"><label for="proof">Public proof or aftercare</label><textarea id="proof" name="proof" placeholder="What public evidence, aftercare note or next check will show this helped?"></textarea></div>
+              <div class="field"><label for="boundary">Boundary note</label><textarea id="boundary" name="boundary" placeholder="What should stay private, unclaimed, unpromised or checked before publication?"></textarea></div>
+            </form>
+            <aside class="card">
+              <h2>Markdown output</h2>
+              <p class="lead">Copy this into an issue, document, agent prompt or public contribution log when it is ready.</p>
+              <textarea class="markdown-output" data-markdown-output aria-label="Generated Markdown contribution card"></textarea>
+              <div class="button-row">
+                <button class="button dark no-arrow" type="button" data-copy-markdown>Copy Markdown</button>
+                <button class="button outline no-arrow" type="button" data-download-markdown>Download .md</button>
+                <button class="button outline no-arrow" type="button" data-reset-form>Reset</button>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+      <section class="section dark">
+        <div class="shell">
+          <div class="section-heading"><div><p class="label">Before sharing</p><h2>Quick trust check.</h2></div><p>A good contribution card is clear enough for another person, organiser or agent to understand without private context.</p></div>
+          <div class="grid four">
+            <article class="card"><h3>Specific</h3><p>It names the action, place and role.</p></article>
+            <article class="card"><h3>Public-safe</h3><p>It leaves private detail out.</p></article>
+            <article class="card"><h3>Non-speculative</h3><p>It does not imply token value or financial rights.</p></article>
+            <article class="card"><h3>Aftercare</h3><p>It says how impact will be checked.</p></article>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer"><div class="footer-grid"><div><h2>Contribute</h2><p>Turn one offer into a clear Markdown card.</p></div><div class="footer-links"><a href="actions.html">Actions</a><a href="ledger.html">Ledger</a><a href="boundaries.html">Boundaries</a></div></div><nav class="sequence-nav" data-sequence-nav aria-label="Previous and next pages"></nav></footer>
+    <button class="to-top" type="button" data-to-top aria-label="Back to top"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M6 11l6-6 6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+  </body>
+</html>
