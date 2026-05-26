@@ -7,7 +7,7 @@
     { href: "travel.html", label: "Travel" },
     { href: "research.html", label: "Research" },
     { href: "ecosystem.html", label: "Ecosystem" },
-    { href: "boundaries.html", label: "Boundaries" },
+    { href: "boundaries.html", label: "Reality Check" },
     { href: "contribute.html", label: "Contribute" },
     { href: "sources.html", label: "Sources" }
   ];
@@ -71,14 +71,14 @@
   }
 
   function buildMarkdown() {
-    const title = getFormValue("title") || "Untitled GAJRA Earth contribution";
+    const title = getFormValue("title") || "Untitled GAJRA Earth trace";
     const role = getFormValue("role") || "Contributor";
     const place = getFormValue("place") || "Not specified";
     const time = getFormValue("time") || "Not estimated";
     const action = getFormValue("action") || "Not specified yet";
     const abundance = getFormValue("abundance") || "Not specified yet";
     const proof = getFormValue("proof") || "Not specified yet";
-    const boundary = getFormValue("boundary") || "Keep private details private.";
+    const boundary = getFormValue("boundary") || "No private material included.";
     const wallet = getFormValue("wallet") || "Optional / not supplied";
 
     return `# ${title}
@@ -87,7 +87,7 @@
 
 - Role: ${role}
 - Place or network: ${place}
-- Estimated C-Hours: ${time}
+- Contribution hours (research only): ${time}
 - Public handle or wallet: ${wallet}
 
 ## Proposed action
@@ -98,17 +98,17 @@ ${action}
 
 ${abundance}
 
-## Public proof or aftercare
+## Public receipt
 
 ${proof}
 
-## Boundary note
+## Red line
 
 ${boundary}
 
 ## Status
 
-Draft contribution card for GAJRA Earth. This is not a financial claim, token sale, official partnership or legal commitment.
+Draft GAJRA Earth public trace. No financial claim, token allocation, official partnership or legal commitment.
 `;
   }
 
@@ -140,7 +140,7 @@ Draft contribution card for GAJRA Earth. This is not a financial claim, token sa
       const url = URL.createObjectURL(blob);
       const link = document.createElement("a");
       link.href = url;
-      link.download = "gajra-earth-contribution.md";
+      link.download = "gajra-earth-trace.md";
       document.body.appendChild(link);
       link.click();
       link.remove();

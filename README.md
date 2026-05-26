@@ -9,13 +9,13 @@ This is a fresh repo, separate from the earlier `GAJRA-earth` repo and the curre
 - `index.html` - gateway and first actions
 - `actions.html` - small contribution paths people can start with
 - `events.html` - decentralised event engine framing
-- `ledger.html` - C-Hour, GAJRA token, wallets and leaderboards
+- `ledger.html` - C-Hour policy research, GAJRA token archive status, wallets and scoreboards
 - `travel.html` - travel and cultural bridge pathways
 - `research.html` - deep research inbox and source lanes
 - `ecosystem.html` - links to the connected public repos
-- `boundaries.html` - public, legal, crypto and safety boundaries
-- `contribute.html` - simple Markdown contribution card builder
-- `sources.html` - public-safe reference list
+- `boundaries.html` - live, research and archive status checks
+- `contribute.html` - simple Markdown public-trace builder
+- `sources.html` - reference and research-lane list
 
 ## Local preview
 
@@ -29,7 +29,7 @@ Then open `http://localhost:4179/`.
 
 ## Status
 
-This site describes a public prototype and activation path. It does not claim that the earlier token, DAO, Live Aid 2025 concept, or global event network launched in the real world.
+This site describes a public build commons and activation path. The earlier token, DAO and Live Aid 2025 launch material is archive.
 
 ## Licence
 

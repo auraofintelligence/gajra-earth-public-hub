@@ -1,31 +1,30 @@
 # Deep Research Inbox
 
-Paste the incoming deep research here when it arrives. Keep this file public-safe unless the repo is kept private.
+Research received: `GAJRA deep-research-report 26 may 26.md`.
 
-## What to preserve
+## Extract
 
-- The founder truth: GAJRA Earth has been thought through for years, but not properly activated.
-- The status truth: the crypto, DAO and Live Aid 2025 concepts were not launched.
-- The practical pivot: start with small public actions, local event tables, value definitions, C-Hour contribution records and public-safe ledgers.
-- The distinction between C-Hour and GAJRA token:
-  - C-Hour is a non-speculative record of verified contribution time.
-  - GAJRA token is a future governance/access/funding concept that needs legal review before any public sale, staking, rewards or exchange language.
-- The ecosystem links: P4A, Strange But True, legal memory, event engine, travel, cosmic nexus and Aura research paths.
+- GAJRA Earth lands strongest as an umbrella and public build commons, not as a single crypto launch or one festival campaign.
+- The old public story still points at a Q1 2025 ICO and Live Aid-style July 2025 moment. That is archive material now.
+- The stronger public lanes are events, travel, civic tools, legal memory, culture, digital identity, source maps and contribution traces.
+- C-Hour is hypothetical policy research from the local-government / braided-economy lane. It needs a tax-system carve-out before it becomes useful.
+- GAJRA token belongs in archive / future-instrument research until a proper legal structure exists.
+- The adjacent repos already show the working grammar: static pages, Markdown builders, local-first records, clear status labels and reusable templates.
 
-## Suggested extraction format
-
-For each useful research chunk, add:
+## Next extraction format
 
 ```md
 ### Source title
 
-Public-safe summary:
+Summary:
 
-Useful claims:
+Receipts:
 
-Risks or caveats:
+Status: live / research / archive
 
-Pages to update:
+Risk:
 
-Suggested action:
+Page updates:
+
+Next public move:
 ```
