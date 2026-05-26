@@ -6,7 +6,7 @@
     { href: "ledger.html", label: "Ledger" },
     { href: "travel.html", label: "Travel" },
     { href: "research.html", label: "Research" },
-    { href: "ecosystem.html", label: "Ecosystem" },
+    { href: "ecosystem.html", label: "System Map" },
     { href: "boundaries.html", label: "Reality Check" },
     { href: "contribute.html", label: "Contribute" },
     { href: "sources.html", label: "Sources" }

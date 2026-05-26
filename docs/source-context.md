@@ -18,4 +18,4 @@ Useful content lanes for future updates:
 - Public wallet transparency
 - Travel and cultural bridge pathways
 - Legal, research and public/private status notes
-- Ecosystem links to adjacent GitHub Pages projects
+- System-map links to adjacent GitHub Pages projects

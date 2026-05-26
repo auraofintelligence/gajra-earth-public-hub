@@ -53,6 +53,42 @@ body.nav-open {
   overflow: hidden;
 }
 
+body[data-page="actions"] {
+  --page-hero-image: url("images/hero-actions.webp");
+}
+
+body[data-page="events"] {
+  --page-hero-image: url("images/hero-events.webp");
+}
+
+body[data-page="ledger"] {
+  --page-hero-image: url("images/hero-ledger.webp");
+}
+
+body[data-page="travel"] {
+  --page-hero-image: url("images/hero-travel.webp");
+}
+
+body[data-page="research"] {
+  --page-hero-image: url("images/hero-research.webp");
+}
+
+body[data-page="ecosystem"] {
+  --page-hero-image: url("images/hero-ecosystem.webp");
+}
+
+body[data-page="boundaries"] {
+  --page-hero-image: url("images/hero-boundaries.webp");
+}
+
+body[data-page="contribute"] {
+  --page-hero-image: url("images/hero-contribute.webp");
+}
+
+body[data-page="sources"] {
+  --page-hero-image: url("images/hero-sources.webp");
+}
+
 main,
 section,
 article,
@@ -124,6 +160,7 @@ textarea {
 
 .nav-shell {
   width: min(100%, var(--max));
+  max-width: calc(100vw - 2rem);
   margin: 0 auto;
   padding: 0.78rem 1.1rem;
   display: flex;
@@ -253,6 +290,7 @@ textarea {
   position: relative;
   z-index: 2;
   width: min(100%, var(--max));
+  max-width: calc(100vw - 2rem);
   margin: 0 auto;
   padding: 5.3rem 1.1rem 4.2rem;
 }
@@ -370,6 +408,7 @@ textarea {
 
 .shell {
   width: min(100%, var(--max));
+  max-width: calc(100vw - 2rem);
   margin: 0 auto;
 }
 
@@ -471,6 +510,13 @@ textarea {
   color: var(--muted);
 }
 
+.card p + p,
+.action-card p + p,
+.link-card p + p,
+.note-card p + p {
+  margin-top: 0.65rem;
+}
+
 .dark .card p,
 .dark .action-card p,
 .dark .link-card p,
@@ -480,13 +526,64 @@ textarea {
 
 .link-card {
   display: grid;
+  gap: 0.8rem;
   text-decoration: none;
 }
 
-.link-card:hover,
-.link-card:focus-visible {
+.link-card:hover {
   border-color: rgba(57, 168, 242, 0.55);
   transform: translateY(-2px);
+}
+
+.card-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin-top: 0.2rem;
+}
+
+.mini-button {
+  display: inline-flex;
+  min-height: 2.3rem;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 0.48rem 0.72rem;
+  color: var(--ink);
+  background: rgba(255, 255, 255, 0.86);
+  font-size: 0.86rem;
+  font-weight: 900;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.mini-button:hover,
+.mini-button:focus-visible {
+  border-color: rgba(57, 168, 242, 0.55);
+  transform: translateY(-1px);
+}
+
+.mini-button.primary {
+  border-color: transparent;
+  color: var(--white);
+  background: linear-gradient(135deg, var(--green), var(--blue));
+}
+
+.mini-button.disabled {
+  color: var(--muted);
+  background: rgba(231, 239, 245, 0.78);
+  cursor: not-allowed;
+}
+
+.dark .mini-button {
+  border-color: var(--line-dark);
+  color: var(--white);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.dark .mini-button.disabled {
+  color: #a9c1d1;
 }
 
 .stat-strip,
@@ -519,6 +616,11 @@ textarea {
 }
 
 .page-hero {
+  position: relative;
+  min-height: 25rem;
+  display: grid;
+  align-items: end;
+  overflow: hidden;
   padding: 4.8rem 1.1rem 3.2rem;
   background:
     linear-gradient(90deg, rgba(57, 168, 242, 0.1) 1px, transparent 1px),
@@ -528,8 +630,31 @@ textarea {
   color: var(--white);
 }
 
+.page-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: var(--page-hero-image, none);
+  background-position: center;
+  background-size: cover;
+  opacity: 0.72;
+  filter: saturate(1.04) contrast(1.02);
+}
+
+.page-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgba(7, 19, 29, 0.92) 0%, rgba(7, 19, 29, 0.76) 45%, rgba(7, 19, 29, 0.36) 100%),
+    linear-gradient(0deg, rgba(7, 19, 29, 0.88) 0%, rgba(7, 19, 29, 0.1) 58%);
+}
+
 .page-title {
+  position: relative;
+  z-index: 1;
   width: min(100%, var(--max));
+  max-width: calc(100vw - 2rem);
   margin: 0 auto;
   display: grid;
   grid-template-columns: minmax(0, 0.9fr) minmax(18rem, 1fr);
@@ -664,6 +789,7 @@ textarea {
 
 .footer-grid {
   width: min(100%, var(--max));
+  max-width: calc(100vw - 2rem);
   margin: 0 auto;
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(18rem, 1fr);
@@ -688,6 +814,7 @@ textarea {
 
 .sequence-nav {
   width: min(100%, var(--max));
+  max-width: calc(100vw - 2rem);
   margin: 2rem auto 0;
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -847,6 +974,14 @@ textarea {
   .nav-shell {
     gap: 0.65rem;
     padding-inline: 0.85rem;
+  }
+
+  .hero-content,
+  .shell,
+  .page-title,
+  .footer-grid,
+  .sequence-nav {
+    width: min(100%, 22rem);
   }
 
   .hero h1 {
